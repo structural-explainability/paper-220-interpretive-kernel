@@ -141,7 +141,7 @@ Assert-Command "latexmk"
 
 $RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path
 $PaperDir = $RepoRoot
-$PaperTex = "se210-operational-identity.tex"
+$PaperTex = "se220-interpretive-kernel.tex"
 $null = Resolve-ExistingPath (Join-Path $PaperDir $PaperTex) "paper TeX file"
 
 # -----------------------------------------------------------------------------

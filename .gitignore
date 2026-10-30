@@ -20,6 +20,8 @@ PRIVATE-NOTES.md
 REVIEWER_COMMENTS.md
 REVIEWER_RESPONSE.md
 contract.tex
+refs/
+references/
 
 # WHY: Temporary and swap files are machine-local noise and create meaningless diffs.
 *.swo
@@ -122,6 +124,6 @@ dist/
 
 # === Project-Specific ===
 # WHY: Include key PDF in the repository root
-!se210-operational-identity.pdf
+!se220-interpretive-kernel.pdf
 !tools/build/
 !tools/build/**

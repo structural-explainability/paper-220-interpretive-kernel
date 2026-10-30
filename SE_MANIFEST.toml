@@ -17,7 +17,7 @@ purpose = "Declares this repository's role in the Structural Explainability ecos
 
 [repository]
 organization = "structural-explainability"
-name = "paper-210-operational-identity"
+name = "paper-220-interpretive-kernel"
 class = "paper"
 kind = "paper"
 status = "draft"
@@ -48,7 +48,7 @@ artifacts = [
     "LICENSE",
     "README.md",
     "SE_MANIFEST.toml",
-    "se210-operational-identity.tex",
+    "se220-interpretive-kernel.tex",
 ]
 
 # === Scope ===

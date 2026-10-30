@@ -63,5 +63,5 @@ jobs:
           mkdir -p artifacts
           latexmk -g -pdf -interaction=nonstopmode -halt-on-error \
             -auxdir=artifacts -outdir=artifacts \
-            se210-operational-identity.tex
-          test -f artifacts/se210-operational-identity.pdf
+            se220-interpretive-kernel.tex
+          test -f artifacts/se220-interpretive-kernel.pdf

@@ -1,26 +1,27 @@
-# Operational Identity
+# Neutral Substrates (by Design): Interpretive Kernel
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![Build PDF](https://github.com/structural-explainability/paper-210-operational-identity/actions/workflows/build-latex.yml/badge.svg?branch=main)](https://github.com/structural-explainability/paper-210-operational-identity/actions/workflows/build-latex.yml)
-[![Check Links](https://github.com/structural-explainability/paper-210-operational-identity/actions/workflows/links.yml/badge.svg?branch=main)](https://github.com/structural-explainability/paper-210-operational-identity/actions/workflows/links.yml)
-[![ArXiv Prep](https://github.com/structural-explainability/paper-210-operational-identity/actions/workflows/arxiv-prep.yml/badge.svg?branch=main)](https://github.com/structural-explainability/paper-210-operational-identity/actions/workflows/arxiv-prep.yml)
+[![Build PDF](https://github.com/structural-explainability/paper-220-interpretive-kernel/actions/workflows/build-latex.yml/badge.svg?branch=main)](https://github.com/structural-explainability/paper-220-interpretive-kernel/actions/workflows/build-latex.yml)
+[![Check Links](https://github.com/structural-explainability/paper-220-interpretive-kernel/actions/workflows/links.yml/badge.svg?branch=main)](https://github.com/structural-explainability/paper-220-interpretive-kernel/actions/workflows/links.yml)
+[![ArXiv Prep](https://github.com/structural-explainability/paper-220-interpretive-kernel/actions/workflows/arxiv-prep.yml/badge.svg?branch=main)](https://github.com/structural-explainability/paper-220-interpretive-kernel/actions/workflows/arxiv-prep.yml)
 
 > Defines a finite audit comparing a record system's declared rule of sameness
 > with the rule of sameness induced by its implementation.
 
 ## Purpose
 
-This repository contains the source for the third paper in the
+This repository contains the source for the fourth paper in the
 Structural Explainability paper series.
 
 ## Prior Papers
 
-- [Neutral Substrates](https://github.com/structural-explainability/paper-100-neutral-substrate)
+- [Neutral Substrates (by Design)](https://github.com/structural-explainability/paper-100-neutral-substrate)
 - [Referential Regimes](https://github.com/structural-explainability/paper-200-identity-regimes)
+- [Operational Identity](https://github.com/structural-explainability/paper-210-operational-identity)
 
 ## Current Version
 
-- [PDF](./se210-operational-identity.pdf)
+- [PDF](./se220-interpretive-kernel.pdf)
 
 ## Building Locally
 
@@ -32,10 +33,10 @@ Requires a LaTeX distribution with `latexmk`:
 
 On Windows, install Strawberry Perl and MiKTeX.
 
-```bash
-latexmk -pdf se210-operational-identity.tex
+```shell
+latexmk -pdf se220-interpretive-kernel.tex
 
-texcount -inc -sum -total se210-operational-identity.tex
+texcount -inc -sum -total se220-interpretive-kernel.tex
 ```
 
 Windows:
@@ -77,6 +78,26 @@ Validate with:
 uvx se-manifest-schema validate-manifest --path SE_MANIFEST.toml --strict
 ```
 
+## Selected Concepts
+
+- Partition lattice: all possible rules of sameness, ordered by refinement
+- Transport: move a rule of sameness through interpretation
+- Lifting: extend occurrence equivalence pointwise to probe signatures
+- Interpretive kernel: frames indistinguishable under that lifted equivalence
+- Extremal construction: greatest supported frame regime / least required occurrence regime
+- Galois connection: exact compatibility law linking those two extremal constructions
+- Generalized pseudoultrametric: pairwise least occurrence regime needed to erase the difference between frames
+
+## Research Process
+
+- Started with an interesting, concrete semantic problem.
+- Finite examples exposed an order structure.
+- The order structure suggested least and greatest compatible regimes.
+- The extremal equivalence revealed an adjunction.
+- Pairwise least demands produced a lattice-valued distance.
+- The distance satisfied an ultrametric-style inequality.
+- Had to make that structure executable and verifiable to test the logic.
+
 ## References
 
 1. Arp, R., Smith, B., and Spear, A. D. (2015).
@@ -93,7 +114,7 @@ uvx se-manifest-schema validate-manifest --path SE_MANIFEST.toml --strict
    <https://arxiv.org/abs/2601.14271>
 
 1. Case, D. M. (2026b).
-   _Referential Regimes: Transformation-Invariant Identity for Neutral Substrates_.
+   _Referential Regimes: Transformation-Based Identity Profiles for Neutral Substrates_.
    arXiv:2601.16152.
    <https://arxiv.org/abs/2601.16152>
 

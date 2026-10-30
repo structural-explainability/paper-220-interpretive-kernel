@@ -9,12 +9,12 @@
 # USAGE: See https://citation-file-format.github.io/ for details.
 
 cff-version: "1.2.0"
-type: software
+type: article
 message: "If you use this work, please cite the paper below."
 
-title: "Operational Identity: A Finite Audit of Declared and Implemented Rules of Sameness"
+title: "Interpretive Kernel: From Occurrence Equivalence to Frame Equivalence"
 version: "0.1.0"
-date-released: "2026-07-17"
+date-released: "2026-07-24"
 
 authors:
   - family-names: Case
@@ -22,43 +22,51 @@ authors:
     orcid: "https://orcid.org/0000-0001-6165-7389"
     affiliation: "Northwest Missouri State University, School of Computer Science and Information Systems, Maryville, MO, USA"
 
-repository-code: "https://github.com/structural-explainability/paper-210-operational-identity"
+repository-code: "https://github.com/structural-explainability/paper-220-interpretive-kernel"
 license: "CC-BY-4.0"
 
 abstract: >
-  This repository contains the source materials for Operational Identity:
-  A Finite Audit of Declared and Implemented Rules of Sameness. The paper
-  defines a finite audit comparing a record system's declared identity
-  partition with operational identity partitions induced by examined
-  implementation surfaces.
+  Many operational systems derive outputs by interpreting stable declarations
+  against external frames that can change independently of those declarations.
+  This paper formalizes when two frames count as equivalent relative to a finite
+  probe family and a declared occurrence equivalence relation. The probe-indexed
+  interpretation construction transports the occurrence equivalence relation to
+  a frame equivalence relation by identifying two frame environments
+  when every selected probe produces occurrence-equivalent outputs. The induced
+  relation is the interpretive kernel. A reverse construction generates, from
+  any declared frame regime, the least occurrence regime required to support it.
+  The two maps form an adjunction between the lattices of occurrence and frame
+  equivalence relations, yielding meet- and join-preservation laws and an exact
+  least threshold. Pairwise thresholds provide an equivalence-relation-valued
+  generalized pseudoultrametric representation of the kernel family. The
+  framework is instantiated for recurring schedules using typed civil and
+  resolved outputs, chronological canonicalization, finite observation horizons,
+  and versioned frame environments. The result makes interpretive equivalence a
+  declared, parameter-relative, and executable relation between rules of
+  sameness on opposite sides of interpretation.
 
 keywords:
-  - operational identity
-  - identity regimes
-  - identity basis
-  - co-reference
-  - record systems
-  - partition refinement
-  - partition lattice
-  - divergence witness
-  - regime substitution
-  - implementation audit
-  - transformation history
-  - provenance
-  - stable reference
-  - disclosure-relative audit
+  - interpretive kernels
+  - occurrence equivalence
+  - frame equivalence
+  - observational equivalence
+  - partition lattices
+  - Galois connections
+  - generalized ultrametrics
+  - schedule semantics
+  - time-zone data
   - structural explainability
 
 preferred-citation:
   type: article
-  title: "Operational Identity: A Finite Audit of Declared and Implemented Rules of Sameness"
+  title: "Interpretive Kernel: From Occurrence Equivalence to Frame Equivalence"
   authors:
     - family-names: Case
       given-names: Denise M.
       orcid: "https://orcid.org/0000-0001-6165-7389"
       affiliation: "Northwest Missouri State University, School of Computer Science and Information Systems, Maryville, MO, USA"
   year: 2026
-  url: "https://github.com/structural-explainability/paper-210-operational-identity"
+  url: "https://github.com/structural-explainability/paper-220-interpretive-kernel"
 
 references:
   - type: article
@@ -71,10 +79,20 @@ references:
     url: "https://doi.org/10.48550/arXiv.2601.14271"
 
   - type: article
-    title: "Referential Regimes: Transformation-Invariant Identity for Neutral Substrates"
+    title: "Referential Regimes: Transformation-Based Identity Profiles for Neutral Substrates"
     authors:
       - family-names: Case
         given-names: Denise M.
         orcid: "https://orcid.org/0000-0001-6165-7389"
     doi: "10.48550/arXiv.2601.16152"
     url: "https://doi.org/10.48550/arXiv.2601.16152"
+
+  - type: article
+    title: "Operational Identity: A Finite Audit of Declared and Implemented Rules of Sameness"
+    authors:
+      - family-names: Case
+        given-names: Denise M.
+        orcid: "https://orcid.org/0000-0001-6165-7389"
+        affiliation: "Northwest Missouri State University, School of Computer Science and Information Systems, Maryville, MO, USA"
+    doi: "10.48550/arXiv.2607.20729"
+    url: "https://doi.org/10.48550/arXiv.2607.20729"

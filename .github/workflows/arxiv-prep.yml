@@ -48,12 +48,12 @@ jobs:
           mkdir -p arxiv_src
 
           # WHY: Copy main tex file
-          cp se210-operational-identity.tex arxiv_src/
+          cp se220-interpretive-kernel.tex arxiv_src/
 
           # # WHY: Include .bbl if present to reduce arXiv bibliography failures
           # # OBS: This is a no-op if file does not exist
-          # if [ -f se210-operational-identity.bbl ]; then
-          #   cp se210-operational-identity.bbl arxiv_src/
+          # if [ -f se220-interpretive-kernel.bbl ]; then
+          #   cp se220-interpretive-kernel.bbl arxiv_src/
           # fi
 
       # WHY: arXiv builds from source - doesn't need build artifacts
@@ -96,10 +96,10 @@ jobs:
         working-directory: arxiv_src
         run: |
           set -e
-          rm -f se210-operational-identity.pdf
+          rm -f se220-interpretive-kernel.pdf
           latexmk -g -pdf -interaction=nonstopmode -halt-on-error \
-            se210-operational-identity.tex
-          test -f se210-operational-identity.pdf
+            se220-interpretive-kernel.tex
+          test -f se220-interpretive-kernel.pdf
 
       # WHY: Provide a compiled PDF for manual verification before arXiv submission
       # OBS: This PDF is NOT included in the arXiv source zip
@@ -107,6 +107,6 @@ jobs:
         uses: actions/upload-artifact@v7
         with:
           name: compiled-pdf
-          path: arxiv_src/se210-operational-identity.pdf
+          path: arxiv_src/se220-interpretive-kernel.pdf
           retention-days: 7
           if-no-files-found: error
